@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "Food",
+    "slug": "food",
+    "privacy": "public",
+    "sdkVersion": "35.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.chopada.food",
+      "config": {
+        "googleMapsApiKey":"AIzaSyBnjwpHcKFCNN0k28ksrP_cunJTTHFQ2B0"
+      }
+    },
+    "android": {
+      "package": "com.chopada.food",
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-5952490106741256~7263400821",
+        "googleMaps": { "apiKey": "AIzaSyBnjwpHcKFCNN0k28ksrP_cunJTTHFQ2B0" }   
+     }
+    }
+  }
+}
