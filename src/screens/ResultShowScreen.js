@@ -35,7 +35,7 @@ const ResultsShowScreen = ({ navigation }) => {
     return (
         <>
          <AdMobBanner
-            bannerSize="banner"
+            bannerSize="fullBanner"
             adUnitID="ca-app-pub-5952490106741256/4137725792" // Test ID, Replace with your-admob-unit-id
             testDeviceID="EMULATOR"
             servePersonalizedAds // true or false

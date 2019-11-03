@@ -5,13 +5,18 @@ export default () => {
     const [results, setResults] = useState([])
     const [errorMessage, seterrorMessage] = useState('')
 
-    const searchApi = async (searchTerm) => {
+    const searchApi = async (searchTerm, selectedCity ) => {
+        if(!selectedCity){
+            selectedCity = 'berlin'
+        }
+        console.log('select city',selectedCity)
+
         try{
             const response = await yelp.get('/search',{
                 params:{
                     limit: 50,
                     term: searchTerm,
-                    location: 'berlin'
+                    location: selectedCity
                 }
             })
             setResults(response.data.businesses)
