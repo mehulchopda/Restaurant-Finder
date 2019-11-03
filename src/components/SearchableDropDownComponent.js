@@ -1,35 +1,29 @@
 import React, { Component, Fragment, useState, useEffect } from 'react';
 import {Text, StyleSheet, ScrollView} from 'react-native'
 import SearchableDropdown from 'react-native-searchable-dropdown';
-import cities from 'cities.json';
+import cities from '../api/cities';
 
 
 const SearchableDropDownComponent = ({onItemChange}) => {
 
-    const [cities_filtered, setCitiesFiltered] = useState([])
 
 
-    const filterCityByCountry = async () => {
-        try{
-            setCitiesFiltered(cities.filter( city => {
-                return (city.country === 'DE' ||
-                       city.country === 'FR' ||
-                       city.country === 'AT' ||
-                       city.country === 'BE' ||
-                       city.country === 'BG' ||
-                       city.country === 'CH' ||
-                       city.country === 'CZ' ||
-                       city.country === 'DK' 
-                   ) 
-            }))
-        }
-        catch(err){
-            seterrorMessage('Something went wrong')
-        }
-    }
+    // const [cities_filtered, setCitiesFiltered] = useState([])
+
+
+    // const filterCityByCountry =  () => {
+    //     try{
+    //         setCitiesFiltered(cities.filter( city => {
+    //             return (city.country === 'DE')
+    //         }))
+    //     }
+    //     catch(err){
+    //         seterrorMessage('Something went wrong')
+    //     }
+    // }
     
     // component did mount
-    useEffect(() => filterCityByCountry)
+   // useEffect(() => filterCityByCountry)
 
     return(
         <Fragment>
@@ -50,7 +44,7 @@ const SearchableDropDownComponent = ({onItemChange}) => {
                 }}
                 itemTextStyle={{ color: '#222' }}
                 itemsContainerStyle={{ maxHeight: 140 }}
-                items={cities_filtered}
+                items={cities}
                 resetValue={false}
                 textInputProps={
                     {

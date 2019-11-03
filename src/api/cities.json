@@ -1,0 +1,61 @@
+[{
+    "id":1,
+    "name":"berlin"
+},
+{
+    "id":2,
+    "name":"stuttgart"
+},
+{
+    "id":3,
+    "name":"munich"
+},
+{
+    "id":4,
+    "name":"frankfurt"
+},
+{
+    "id":5,
+    "name":"hamburg"
+},
+{
+    "id":6,
+    "name":"paris"
+},
+{
+    "id":7,
+    "name":"lyon"
+},
+{
+    "id":8,
+    "name":"budapest"
+},
+{
+    "id":9,
+    "name":"prague"
+},
+{
+    "id":10,
+    "name":"florence"
+},
+{
+    "id":11,
+    "name":"venice"
+},
+{
+    "id":12,
+    "name":"mallorca"
+},
+{
+    "id":13,
+    "name":"bern"
+},
+{
+    "id":14,
+    "name":"pisa"
+},
+{
+    "id":15,
+    "name":"barcelona"
+}
+]
