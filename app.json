@@ -15,7 +15,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#8bd031"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -33,7 +33,7 @@
     },
     "android": {
       "package": "com.chopada.food",
-      "versionCode": 2,
+      "versionCode": 3,
       "config": {
         "googleMobileAdsAppId": "ca-app-pub-5952490106741256~7263400821",
         "googleMaps": { "apiKey": "AIzaSyBnjwpHcKFCNN0k28ksrP_cunJTTHFQ2B0" }   
